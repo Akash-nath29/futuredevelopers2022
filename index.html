@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <style>
+            * {
+                margin:0;
+                padding:0;
+            }
+            html {
+                scroll-behavior:smooth;
+            }
+            .continer {
+                width:100%;
+                min-height:100vh;
+                padding-left:8%;
+                padding-right:8%;
+                box-sizing:border-box;
+                overflow:hidden;
+            }
+            .navbar {
+                width:100%;
+                display:flex;
+                align-items:center;
+            }
+            .logo {
+                width:50px;
+                cursor:pointer;
+                margin:30px 0;
+            }
+            .menu-icon {
+                width:25px;
+                cursor:pointer;
+            }
+            nav {
+                flex:1;
+                text-align:right;
+                color:#6fc4d9;
+            }
+            nav ul li {
+                list-style:none;
+                display:inline-block;
+                margin-right:30px;
+                font-size:35px;
+            }
+            nav ul li a {
+                text-decoration:none;
+                color:#000;
+                font-size:24px;
+            }
+            nav ul li a:hover {
+                color:red;
+            }
+            .logo {
+                width:100px;
+                height:100px;
+                border:3px solid black;
+                border-radius:10px;
+                margin-left:2vh;
+            }
+            .logoimg {
+                width:300px;
+                height:300px;
+                margin-left:3vh;
+                margin-bottom:60px;
+                border:2px solid black;
+                border-radius:10px;
+            }
+            .home h1 {
+                font-family:'Ubuntu';
+                font-size:130px;
+                margin-left:3vh;
+                padding-bottom:20px;
+            }
+           .home {
+                padding-top:30vh;
+                background:url("images/futuredevbg.jpg") no-repeat center center fixed;
+                background-size:cover;
+                padding-bottom:30vh;
+                border-bottom:5px solid black;
+                box-shadow:4px 4px 4px red ;
+            }
+            .catch-line {
+                margin-left:3vh;
+                font-size:40px;
+            }
+            .abouts {
+                background:url("images/aboutbg.jpg") no-repeat center center fixed;
+            }
+            .abouts h1 {
+                font-family:'Tangerine',serif;
+                font-size:130px;
+                padding-left:11vh;
+                padding-top:3vh;
+                padding-bottom:3vh;
+                text-shadow:4px 4px 4px #ffffff1;
+                position:relative;
+            }
+            .about h1::before {
+                content: "";
+                position: absolute;
+                left: 7%;
+                bottom: 16px;
+                width: 150px;
+                height: 14px;
+                transform: skew(-12deg) translateX(-50%);
+                background: rgba(238,111,87,0.5);
+                z-index: -1;
+            }
+            .abouts .intro {
+                font-family:'Montserrat',serif;
+                font-size:60px;
+                text-align:center;
+                padding-left:2vh;
+                padding-right:2vh;
+                padding-bottom:2vh;
+            }
+            .abouts ul {
+                font-family:'Caveat',serif;
+                font-size:50px;
+                padding-left:2vh;
+                padding-right:2vh;
+                padding-bottom:5vh;
+            }
+            .akash {
+                padding-bottom:2vh;
+                padding-right:1vh;
+                padding-left:1vh;
+            }
+            .asmit {
+                padding-bottom:2vh;
+                padding-right:1vh;
+                padding-left:1vh;
+            }
+            .biprayan {
+                padding-bottom:2vh;
+                padding-right:1vh;
+                padding-left:1vh;
+            }
+            .srijani {
+                padding-bottom:2vh;
+                padding-right:1vh;
+                padding-left:1vh;
+            }
+            .skills {
+                background:url("images/skillsbg.jpg") no-repeat center center fixed;
+                height:900px;
+                border-top:5px solid black;
+                padding-bottom:10vh;
+            }
+            .skills h1 {
+                font-family:'Tangerine',serif;
+                font-size:130px;
+                padding-left:14vh;
+                padding-top:4vh;
+                padding-bottom:4vh;
+            }
+            .skills .skills_para {
+                font-family:'Caveat',serif;
+                font-size:70px;
+                text-align:center;
+                margin-left:2vh;
+                margin-right:2vh;
+                padding-top:1vh;
+            }
+            .skills ul {
+                font-family:;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/futuredev.jpg" class="logo">
+                <!--nav bar-->
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#intro">About Us</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#whyus">Why us</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu-icon-mobile-20.jpg" class="menu-icon">
+            </div>
+            <!--home section-->
+            <div class="home" id="home">
+                <img src="images/futuredev.jpg" class="logoimg">
+                <h1>Future Developers</h1>
+                <div class="catch-line">
+                    <h2><i>if  </i>you wanna be future programmer:</h2><br>
+                    <h2>&nbsp&nbsp&nbsp&nbsp&nbsp<b>print("JOIN HERE")</b></h2>
+                </div>
+            </div>
+            <!--about us section-->
+            <div class="abouts" id="intro">
+                <h1>Who we are</h1>
+                <p class="intro">Hello user !<br>We are Future Developers , a team of passionate programmers. We are student of 11<sup>th</sup> grade. We code to enjoy.</p>
+                <ul>
+                    <li class="akash"><h3>Akash Nath</h3>
+                    <p>Hey , I'm Akash , 17 years old student from India...passionate about fullstack development with 6 months experience of Python programming.</p></li>
+                    <li class="asmit"><h3>Asmit Roy</h3>
+                    <p>I'm Asmit Roy, a smart contract engineer,and also blockchain core developer..Also can handle back end..And I'm also a cryptographer and a trader..</p></li>
+                    <li class="biprayan"><h3>Biprayan Paul</h3>
+                    <p>Hey , I'm Biprayan , 17 years old student from India...passionate about program development with 5 months experience of C++programming</p></li>
+                    <li class="srijani"><h3>Srijani Bhattacharya</h3>
+                    <p>It's Srijani , aged 17 , student of West Bengal , India , passionate web-designer with 6 months of web-designing experience.</p></li>
+                </ul>
+            </div>
+            <!--Skills-->
+            <div class="skills" id="skills">
+                <h1>Our Skills</h1>
+                <p class="skills_para">
+                    Our team works as a fullstack developer team. We have our own backend developer , frontend developer and designer too. We work with ambition to become a successfull developer and that's why we are learning programming.
+                </p>
+                <ul>
+                    <li><h3>Frontend</h3>
+                    <p><ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
